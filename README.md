@@ -1,4 +1,4 @@
-# Stack48 Digital Agency Showcase
+# Stack48 Digital Agency
 
 Welcome to the Stack48 Digital Agency project! This project is a website showcasing the services offered 
 by Stack48, including Coding, Online Acquisition, and Content Strategy.
