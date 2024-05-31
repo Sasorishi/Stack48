@@ -7,6 +7,7 @@ function App() {
           <li></li>
         </ul>
       </nav>
+      <p className="text-pink-700">test micro</p>
     </div>
   );
 }

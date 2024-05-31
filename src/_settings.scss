@@ -8,16 +8,33 @@
   font-weight: bold;
   src: url(../src/assets/fonts/gelion-cufonfonts/Gelion\ Bold.ttf);
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+$blue1: #3cbbb2;
+$blue2: #7ac2b8;
+$blue3: #41de9b;
+$purple1: #2f2156;
+$purple2: #612d8f;
+$purple3: #7362a8;
+$dark1: #141b35;
+$dark2: #31394e;
+$black1: #000000;
+$black2: #262626;
+$white1: #fffef8;
+$white2: #faf8f3;
+
 :root {
   font-family: gelion, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
   color-scheme: light dark;
-  color: #141b35;
-  background-color: #faf8f3;
+  color: $dark1;
+  background-color: $white2;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,6 +46,15 @@
   margin: 0;
   padding: 0;
 }
+
+// a {
+//   font-weight: 500;
+//   color: #646cff;
+//   text-decoration: inherit;
+// }
+// a:hover {
+//   color: #535bf2;
+// }
 
 body {
   margin: 0;
@@ -52,14 +78,11 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: border-color 0.25s;
   transition: border-color 0.25s;
 }
-
 button:hover {
   border-color: #646cff;
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -77,14 +100,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-#navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}/*# sourceMappingURL=index.css.map */
