@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: Regular;
   src: url(../assets/font/Gelion-Regular.ttf);
@@ -6,9 +9,6 @@
   font-family: Bold;
   src: url(../assets/font/Gelion-Bold.ttf);
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 :root {
   font-family: "Regular";
   line-height: 1.5;

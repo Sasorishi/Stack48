@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $blue1 : rgb(60, 187, 178);
 $blue2 : rgb(122, 194, 183);
 $blue3 : rgb(65, 222, 155);
@@ -20,11 +24,6 @@ $black2 : rgb(38, 38, 38);
     font-family: Bold;
     src: url(../assets/font/Gelion-Bold.ttf);
 }
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   font-family: 'Regular';
