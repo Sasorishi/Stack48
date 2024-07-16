@@ -1,15 +1,38 @@
+$blue1 : rgb(60, 187, 178);
+$blue2 : rgb(122, 194, 183);
+$blue3 : rgb(65, 222, 155);
+$purple1 : rgb(47, 33, 86);
+$purple2 : rgb(97, 45, 143);
+$purple3 : rgb(115, 98, 168);
+$dark1 : rgb(50, 56, 78);
+$dark2 : rgb(20, 27, 53);
+$white1 : rgb(255, 254, 248);
+$white2 : rgb(250, 248, 243);
+$black1 : black;
+$black2 : rgb(38, 38, 38);
+
+@font-face {
+    font-family: Regular;
+    src: url(../assets/font/Gelion-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../assets/font/Gelion-Bold.ttf);
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Regular';
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
+  color: $dark1;
+  background-color:$white2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
