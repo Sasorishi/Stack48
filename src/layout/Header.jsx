@@ -1,11 +1,11 @@
-import Logo from "_images/coding.jpg"
+import Logo from "_images/Logo.png"
 
 const Header = () =>{
     return(
-        <div className="header">
-            <img src={Logo} alt="" />
+        <header className="header">
+            <img src={Logo} alt="" className="Logo"/>
             <h1>STACK 48</h1>
-        </div>
+        </header>
     );
 }
 

@@ -37,15 +37,11 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -80,4 +76,28 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.nav {
+  height: 12vh;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .Logo {
+  height: 40vh;
+  border: 0;
+  padding: 0;
+}
+header h1 {
+  border: 0;
+  padding: 0;
+  font-size: 15rem;
 }/*# sourceMappingURL=index.css.map */

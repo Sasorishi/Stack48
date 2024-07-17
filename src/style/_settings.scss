@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Regular;
+    src: url(../assets/font/Gelion-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../assets/font/Gelion-Bold.ttf);
+}
+
 $blue1 : rgb(60, 187, 178);
 $blue2 : rgb(122, 194, 183);
 $blue3 : rgb(65, 222, 155);
@@ -15,14 +25,10 @@ $white2 : rgb(250, 248, 243);
 $black1 : black;
 $black2 : rgb(38, 38, 38);
 
-@font-face {
-    font-family: Regular;
-    src: url(../assets/font/Gelion-Regular.ttf);
-}
-
-@font-face {
-    font-family: Bold;
-    src: url(../assets/font/Gelion-Bold.ttf);
+@mixin childCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
@@ -54,15 +60,11 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
