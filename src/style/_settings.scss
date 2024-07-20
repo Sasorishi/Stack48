@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Regular;
+    font-family: "GelionRegular";
     src: url(../assets/font/Gelion-Regular.ttf);
 }
 
 @font-face {
-    font-family: Bold;
+    font-family: "GelionBold";
     src: url(../assets/font/Gelion-Bold.ttf);
 }
 
@@ -24,6 +24,8 @@ $white1 : rgb(255, 254, 248);
 $white2 : rgb(250, 248, 243);
 $black1 : black;
 $black2 : rgb(38, 38, 38);
+$font1 : GelionRegular, Roboto;
+$font2 : GelionBold, Roboto;
 
 @mixin childCenter {
   display: flex;
@@ -31,8 +33,66 @@ $black2 : rgb(38, 38, 38);
   align-items: center;
 }
 
+.header-container{
+  @include childCenter;
+  flex-direction: column;
+  font-family: $font2;
+  .Logo{
+      height: 40vh;
+      border: 0;
+      padding: 0;
+  }
+  .main-title{
+    font-size: xx-large;
+  }
+}
+
+.head-up{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 60px;
+
+  .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .text ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    border-top: 1px solid $black1;
+  }
+
+}
+
+.quote{
+  margin-top: 20px;
+  font-family: $font1;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.business{
+  h2{
+    margin: 150px;
+    font-size: 2rem;
+    text-decoration: underline
+  }
+}
+
+
+.Map{
+  margin: 150px 0;
+}
+
 :root {
-  font-family: 'Regular';
+  font-family: $font1;
   line-height: 1.5;
   font-weight: 400;
   

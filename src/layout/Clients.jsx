@@ -1,14 +1,22 @@
 const Clients = () =>{
     return (
         <section className="clients">
-            <div className="clients">
-                <div className="head-up">
-                    <p>Agence digitale : Coding | Online Acquisition | Content Creation</p>
+                <div className="head-up" id="head-up">
+                    <div className="head-up-container">
+                        <div className="text">
+                            <p>Agence digitale :</p>
+                            <p>Coding | Online Acquisition | Content Creation</p>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iusto error labore ea illum eligendi expedita.</p>
+
+                <div className="quote" id="quote">
+                    <div className="quote-container">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iusto error labore ea illum eligendi expedita.</p>
+                    </div>
+                </div>
                 <h2>Voici leurs histoires</h2>
                 <div className="caroussel"></div>
-            </div>
         </section>
     )
 }
