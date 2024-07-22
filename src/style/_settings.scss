@@ -37,13 +37,13 @@ $font2 : GelionBold, Roboto;
   @include childCenter;
   flex-direction: column;
   font-family: $font2;
-  .Logo{
-      height: 40vh;
+  .logo{
+      height: 100%;
       border: 0;
       padding: 0;
   }
   .main-title{
-    font-size: xx-large;
+    font-size: 1rem;
   }
 }
 

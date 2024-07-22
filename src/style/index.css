@@ -16,13 +16,13 @@
   flex-direction: column;
   font-family: GelionBold, Roboto;
 }
-.header-container .Logo {
-  height: 40vh;
+.header-container .logo {
+  height: 100%;
   border: 0;
   padding: 0;
 }
 .header-container .main-title {
-  font-size: xx-large;
+  font-size: 1rem;
 }
 
 .head-up {

@@ -4,16 +4,12 @@ const Header = () =>{
     return(
         <header className="header" id="header">
             <div className="header-container">
-                <img src={Logo} alt="" className="Logo"/>
+                <img src={Logo} alt="" className="logo w-[80vw] lg:w-[50vw]"/>
 
                 <div className="m-auto">
-                    <div className="w-screen">
-                        <div className="lg:w-full md:w-full sm:w-full">
                             <div className="main-title">
                                 <h1>STACK 48</h1>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
