@@ -39,12 +39,12 @@ const Vision =() =>{
             </div>
             
             <div className="cards">
-                <div className="Cardscontainer">
-                    <img src={DongHanh} alt="dong hanh" />
-                    <img src={Folere} alt="folere" />
-                    <img src={Numery} alt="numery" />
-                    <img src={Vwd} alt="vwd" />
-                    <img src={Sakana} alt="sakana" />
+                <div className="cardscontainer">
+                    <img src={DongHanh} alt="dong hanh" className="dong-hanh"/>
+                    <img src={Folere} alt="folere" className="folere"/>
+                    <img src={Numery} alt="numery" className="numery"/>
+                    <img src={Vwd} alt="vwd" className="vwd"/>
+                    <img src={Sakana} alt="sakana" className="sakana"/>
                 </div>
             </div>
         </div>

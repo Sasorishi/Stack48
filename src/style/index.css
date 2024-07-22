@@ -22,7 +22,8 @@
   padding: 0;
 }
 .header-container .main-title {
-  font-size: 1rem;
+  font-size: 12rem;
+  letter-spacing: 20px;
 }
 
 .head-up {
@@ -59,8 +60,74 @@
   text-decoration: underline;
 }
 
+.business .cards img {
+  padding: 10%;
+}
+
 .Map {
   margin: 150px 0;
+}
+
+.TitleProject h2 {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-family: GelionBold, Roboto;
+  font-size: 6rem;
+  width: 50px;
+  line-height: 80%;
+  margin-bottom: 1%;
+}
+
+.projets-recents .cards img {
+  border-radius: 2% 2% 2% 2%/5% 5% 5% 5%;
+  min-width: 200px;
+  min-height: 200px;
+  width: 50%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.cardscontainer {
+  padding: 0 10% 0 5%;
+  margin-bottom: -30%;
+}
+.cardscontainer .dong-hanh {
+  position: relative;
+}
+.cardscontainer .folere {
+  position: relative;
+  left: 60%;
+  bottom: 100px;
+}
+.cardscontainer .numery {
+  position: relative;
+  bottom: 200px;
+}
+.cardscontainer .vwd {
+  position: relative;
+  left: 60%;
+  bottom: 300px;
+}
+.cardscontainer .sakana {
+  position: relative;
+  bottom: 400px;
+}
+
+.stories {
+  margin-top: 30%;
+}
+
+.stories-container h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  position: relative;
+}
+.stories-container h2 ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid black;
 }
 
 :root {

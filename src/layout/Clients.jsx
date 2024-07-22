@@ -15,7 +15,11 @@ const Clients = () =>{
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iusto error labore ea illum eligendi expedita.</p>
                     </div>
                 </div>
-                <h2>Voici leurs histoires</h2>
+                <div className="stories">
+                    <div className="stories-container">
+                        <h2>Voici leurs histoires</h2>
+                    </div>
+                </div>
                 <div className="caroussel"></div>
         </section>
     )

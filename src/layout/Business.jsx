@@ -24,15 +24,17 @@ const Business = () =>{
 
       <h2>Notre proposition de valeur</h2>
       {/* <div className="container mx-auto px-4"> */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-4/12 md:w-full sm:w-full">
-            <img src={coding} alt="coding" />
-          </div>
-          <div className="lg:w-4/12 md:w-full sm:w-full">
-            <img src={content} alt="content" />
-          </div>
-          <div className="lg:w-4/12 md:w-full sm:w-full">
-            <img src={acquisition} alt="acquisition" />
+        <div className="cards">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-4/12 md:w-full sm:w-full">
+              <img src={coding} alt="coding" />
+            </div>
+            <div className="lg:w-4/12 md:w-full sm:w-full">
+              <img src={content} alt="content" />
+            </div>
+            <div className="lg:w-4/12 md:w-full sm:w-full">
+              <img src={acquisition} alt="acquisition" />
+            </div>
           </div>
         </div>
       {/* </div> */}
