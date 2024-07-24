@@ -17,7 +17,9 @@ const Clients = () =>{
                 </div>
                 <div className="stories">
                     <div className="stories-container">
-                        <h2>Voici leurs histoires</h2>
+                        <div className="stories-title">
+                            <h2>Voici leurs histoires</h2>
+                        </div>
                     </div>
                 </div>
                 <div className="caroussel"></div>

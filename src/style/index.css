@@ -9,6 +9,23 @@
   font-family: "GelionBold";
   src: url(../assets/font/Gelion-Bold.ttf);
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+button {
+  background-color: #f9f9f9;
+}
+
+* {
+  list-style: none;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
@@ -69,8 +86,7 @@
 }
 
 .TitleProject h2 {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   font-family: GelionBold, Roboto;
   font-size: 6rem;
   width: 50px;
@@ -117,15 +133,18 @@
   margin-top: 30%;
 }
 
-.stories-container h2 {
+.stories-container .stories-title {
   text-align: left;
   font-size: 2.5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.stories-container h2 ::after {
+.stories-container .stories-title ::after {
   content: "";
   position: absolute;
   width: 100%;
+  top: 100%;
   left: 0;
   border-top: 1px solid black;
 }
@@ -140,10 +159,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  list-style: none;
 }
 
 a {
@@ -186,18 +201,31 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+footer {
+  padding: 10% 0;
 }
+footer .places {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+}
+footer .ending {
+  padding-top: 25%;
+  margin-bottom: -100%;
+}
+footer .ending .ending-container {
+  top: 100%;
+}
+footer .ending .ending-container h2 {
+  text-align: left;
+  font-size: 12rem;
+}
+
 .nav {
   height: 12vh;
 }
