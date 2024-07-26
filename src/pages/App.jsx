@@ -10,12 +10,17 @@ function App() {
   return (
     <>
 
+    <section className="stack48">
+      
       <Nav/>
       <Header />
       <Business/>
       <Vision />
       <Clients />
       <Footer/>
+
+    </section>
+
       
     </>
   );
