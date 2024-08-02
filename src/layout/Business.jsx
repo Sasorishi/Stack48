@@ -21,8 +21,10 @@ const Business = () =>{
         </div>
       </div>
 
-
-      <h2>Notre proposition de valeur</h2>
+      <div className="business-title">
+        <h2>Notre proposition de valeur</h2>
+      </div>
+      
       {/* <div className="container mx-auto px-4"> */}
         <div className="cards">
           <div className="flex flex-col lg:flex-row">

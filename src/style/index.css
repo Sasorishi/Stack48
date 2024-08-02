@@ -30,13 +30,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
 
 button {
   background-color: #f9f9f9;
+}
+
+.nav-container {
+  position: relative;
+  text-align: right;
+  color: rgb(38, 38, 38);
+}
+.nav-container .nav-title {
+  position: absolute;
+}
+.nav-container .toggle {
+  position: absolute;
+}
+.nav-container .nav-headling {
+  padding-top: 10%;
+}
+.nav-container .nav-headling li {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.nav-container .nav-headling li:hover {
+  -webkit-text-decoration: underline solid rgb(38, 38, 38) 2px;
+          text-decoration: underline solid rgb(38, 38, 38) 2px;
+}
+
+#nav-menu {
+  position: absolute;
+  width: 101%;
+  height: 65%;
+  background: rgb(237, 236, 231);
+  top: 0;
+  left: -1%;
+  transition: 0.5s ease-out;
+  z-index: 4;
 }
 
 .stack48 {
@@ -62,6 +98,7 @@ button {
 .header-container .main-title {
   font-size: 4rem;
   letter-spacing: 20px;
+  display: block;
 }
 @media screen and (min-width: 475px) {
   .header-container .main-title {
@@ -71,33 +108,57 @@ button {
     max-width: 475px;
   }
 }
+@media screen and (min-width: 544px) {
+  .header-container .main-title {
+    font-size: 5rem;
+  }
+  .header-container .main-title .stack48 {
+    max-width: 544px;
+  }
+}
 @media screen and (min-width: 640px) {
   .header-container .main-title {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .header-container .main-title .stack48 {
     max-width: 640px;
   }
 }
+@media screen and (min-width: 686px) {
+  .header-container .main-title {
+    font-size: 7rem;
+  }
+  .header-container .main-title .stack48 {
+    max-width: 686px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container .main-title {
-    font-size: 6.9rem;
+    font-size: 8rem;
   }
   .header-container .main-title .stack48 {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 826px) {
   .header-container .main-title {
-    font-size: 11rem;
+    font-size: 9rem;
   }
   .header-container .main-title .stack48 {
-    max-width: 1024px;
+    max-width: 826px;
+  }
+}
+@media screen and (min-width: 1036px) {
+  .header-container .main-title {
+    font-size: 12rem;
+  }
+  .header-container .main-title .stack48 {
+    max-width: 1036px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header-container .main-title {
-    font-size: 7rem;
+    font-size: 17.5rem;
   }
   .header-container .main-title .stack48 {
     max-width: 1280px;
@@ -105,7 +166,7 @@ button {
 }
 @media screen and (min-width: 1536px) {
   .header-container .main-title {
-    font-size: 7rem;
+    font-size: 23rem;
   }
   .header-container .main-title .stack48 {
     max-width: 1536px;
@@ -134,16 +195,17 @@ button {
 }
 
 .quote {
-  margin-top: 20px;
+  margin-top: 2.5%;
   font-family: GelionRegular, Roboto;
   text-align: center;
   font-size: 2.5rem;
 }
 
-.business h2 {
-  margin: 150px;
+.business .business-title {
+  margin: 15%;
   font-size: 2rem;
   text-decoration: underline;
+  text-align: center;
 }
 
 .business .cards img {
@@ -151,14 +213,14 @@ button {
 }
 
 .Map {
-  margin: 150px 0;
+  margin: 15% 0;
 }
 
 .TitleProject h2 {
   text-align: left;
   font-family: GelionBold, Roboto;
   font-size: 6rem;
-  width: 50px;
+  width: 25%;
   line-height: 80%;
   margin-bottom: 1%;
 }
@@ -169,35 +231,6 @@ button {
   min-height: 200px;
   width: 100%;
   height: auto;
-}
-
-.cardscontainer {
-  display: grid;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
-  gap: 1em;
-  grid-template-areas: "a a a . . ." "a a a . . ." "a a a b b b" "c c c b b b" "c c c b b b" "c c c d d d" "e e e d d d" "e e e d d d" "e e e . . .";
-  padding-left: 5%;
-}
-
-.dong-hanh {
-  grid-area: a;
-}
-
-.folere {
-  grid-area: b;
-}
-
-.numery {
-  grid-area: c;
-}
-
-.vwd {
-  grid-area: d;
-}
-
-.sakana {
-  grid-area: e;
 }
 
 .stories {
@@ -281,12 +314,12 @@ footer .ending .ending-container {
   top: 100%;
 }
 footer .ending .ending-container h2 {
-  text-align: left;
-  font-size: 4.5rem;
+  text-align: center;
+  font-size: 6.9rem;
 }
 @media screen and (min-width: 475px) {
   footer .ending .ending-container h2 {
-    font-size: 4.5rem;
+    font-size: 6.9rem;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 475px;
@@ -294,7 +327,7 @@ footer .ending .ending-container h2 {
 }
 @media screen and (min-width: 640px) {
   footer .ending .ending-container h2 {
-    font-size: 6rem;
+    font-size: 9rem;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 640px;
@@ -302,7 +335,7 @@ footer .ending .ending-container h2 {
 }
 @media screen and (min-width: 768px) {
   footer .ending .ending-container h2 {
-    font-size: 9rem;
+    font-size: 12;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 768px;
@@ -310,7 +343,7 @@ footer .ending .ending-container h2 {
 }
 @media screen and (min-width: 1024px) {
   footer .ending .ending-container h2 {
-    font-size: 11rem;
+    font-size: 14rem;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 1024px;
@@ -318,7 +351,7 @@ footer .ending .ending-container h2 {
 }
 @media screen and (min-width: 1280px) {
   footer .ending .ending-container h2 {
-    font-size: 12rem;
+    font-size: 19rem;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 1280px;
@@ -326,17 +359,9 @@ footer .ending .ending-container h2 {
 }
 @media screen and (min-width: 1536px) {
   footer .ending .ending-container h2 {
-    font-size: 13rem;
+    font-size: 23rem;
   }
   footer .ending .ending-container h2 .stack48 {
     max-width: 1536px;
   }
-}
-
-.nav {
-  height: 12vh;
-}
-.nav ul {
-  display: flex;
-  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */

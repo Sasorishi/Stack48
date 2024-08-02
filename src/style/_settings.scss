@@ -38,6 +38,7 @@ $dark1 : rgb(50, 56, 78);
 $dark2 : rgb(20, 27, 53);
 $white1 : rgb(255, 254, 248);
 $white2 : rgb(250, 248, 243);
+$white3 : rgb(237,236,231);
 $black1 : black;
 $black2 : rgb(38, 38, 38);
 $font1 : GelionRegular, Roboto;
@@ -57,9 +58,9 @@ $font2 : GelionBold, Roboto;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  // margin: 0;
-  // padding: 0;
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
@@ -67,6 +68,40 @@ $font2 : GelionBold, Roboto;
 button {
   background-color: #f9f9f9;
 }
+
+.nav-container{
+  position: relative;
+  text-align: right;
+  color: $black2;
+  .nav-title{
+    position: absolute;
+  }
+  .toggle{
+    position: absolute;
+  }
+  .nav-headling{
+    padding-top: 10%;
+    li {
+      font-size: 3rem;
+      cursor: pointer;
+    }
+    li:hover {
+      text-decoration: underline solid $black2 2px;
+    }
+  }
+}
+
+#nav-menu{
+  position: absolute;
+  width: 101%;
+  height: 65%;
+  background: $white3;
+  top: 0;
+  left: -1%;
+  transition: 0.5s ease-out;
+  z-index: 4;
+}  
+
 
 .stack48{
   width: 100%;
@@ -88,6 +123,7 @@ button {
   .main-title{
     font-size: 4rem;
     letter-spacing: 20px;
+    display: block;
     @media screen and (min-width: 475px) {
       .stack48{
         max-width: 475px;
@@ -95,39 +131,60 @@ button {
       font-size: 4rem;
       
     }
+    @media screen and (min-width: 544px) {
+      .stack48{
+        max-width: 544px;
+      }
+      font-size: 5rem;
+      
+    }
     @media screen and (min-width: 640px) {
       .stack48{
         max-width: 640px;
       }
-      font-size: 4rem;
+      font-size: 6rem;
+      
+    }
+    @media screen and (min-width: 686px) {
+      .stack48{
+        max-width: 686px;
+      }
+      font-size: 7rem;
       
     }
     @media screen and (min-width: 768px) {
       .stack48{
         max-width: 768px;
       }
-      font-size: 6.9rem;
+      font-size: 8rem;
       
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 826px) {
       .stack48{
-        max-width: 1024px;
+        max-width: 826px;
       }
-      font-size: 11rem;
+      font-size: 9rem;
+      
+    }
+    @media screen and (min-width: 1036px) {
+      .stack48{
+        max-width: 1036px;
+      }
+      font-size: 12rem;
       
     }
     @media screen and (min-width: 1280px) {
       .stack48{
        max-width: 1280px; 
       }
-      font-size: 7rem;
+      font-size: 17.5rem;
       
     }
     @media screen and (min-width: 1536px) {
       .stack48{
        max-width: 1536px; 
       }
-      font-size: 7rem;
+      font-size: 23rem;
       
     }
   }
@@ -158,17 +215,18 @@ button {
 }
 
 .quote{
-  margin-top: 20px;
+  margin-top: 2.5%;
   font-family: $font1;
   text-align: center;
   font-size: 2.5rem;
 }
 
 .business{
-  h2{
-    margin: 150px;
+  .business-title{
+    margin: 15%;
     font-size: 2rem;
-    text-decoration: underline
+    text-decoration: underline;
+    text-align: center;
   }
 }
 
@@ -181,7 +239,7 @@ button {
 }
 
 .Map{
-  margin: 150px 0;
+  margin: 15% 0;
 }
 
 .TitleProject{
@@ -189,7 +247,7 @@ button {
     text-align: left;
     font-family: $font2;
     font-size: 6rem;
-    width: 50px;
+    width: 25%;
     line-height: 80%;
     margin-bottom: 1%;
     }
@@ -208,43 +266,43 @@ button {
   }
 }
 
-.cardscontainer{
-  display: grid;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
-  gap: 1em;
-  grid-template-areas: 
-  "a a a . . ."
-  "a a a . . ."
-  "a a a b b b"
-  "c c c b b b"
-  "c c c b b b"
-  "c c c d d d"
-  "e e e d d d"
-  "e e e d d d"
-  "e e e . . .";
-  padding-left: 5%;
-}
+// .cardscontainer{
+//   display: grid;
+//   grid-auto-rows: minmax(100px, auto);
+//   grid-template-columns: repeat(6, minmax(200px, 1fr));
+//   gap: 1em;
+//   grid-template-areas: 
+//   "a a a . . ."
+//   "a a a . . ."
+//   "a a a b b b"
+//   "c c c b b b"
+//   "c c c b b b"
+//   "c c c d d d"
+//   "e e e d d d"
+//   "e e e d d d"
+//   "e e e . . .";
+//   padding-left: 5%;
+// }
 
-.dong-hanh{
-  grid-area: a;
-}
+// .dong-hanh{
+//   grid-area: a;
+// }
 
-.folere{
-  grid-area: b;
-}
+// .folere{
+//   grid-area: b;
+// }
 
-.numery{
-  grid-area: c;
-}
+// .numery{
+//   grid-area: c;
+// }
 
-.vwd{
-  grid-area: d;
-}
+// .vwd{
+//   grid-area: d;
+// }
 
-.sakana{
-  grid-area: e;
-}
+// .sakana{
+//   grid-area: e;
+// }
 
 .stories{
   margin-top: 30%;
@@ -328,49 +386,48 @@ footer{
     .ending-container{
       top: 100%;
       h2{
-        text-align: left;
-        font-size: 4.5rem;
+        text-align: center;
+        font-size: 6.9rem;
         @media screen and (min-width: 475px) {
           .stack48{
             max-width: 475px;
           }
-          font-size: 4.5rem;
+          font-size: 6.9rem;
           
         }
         @media screen and (min-width: 640px) {
           .stack48{
             max-width: 640px;
           }
-          font-size: 6rem;
+          font-size: 9rem;
           
         }
         @media screen and (min-width: 768px) {
           .stack48{
             max-width: 768px;
           }
-          font-size: 9rem;
+          font-size: 12;
           
         }
         @media screen and (min-width: 1024px) {
           .stack48{
             max-width: 1024px;
           }
-          font-size: 11rem;
+          font-size: 14rem;
           
         }
         @media screen and (min-width: 1280px) {
           .stack48{
             max-width: 1280px;
           }
-          font-size: 12rem;
+          font-size: 19rem;
           
         }
         @media screen and (min-width: 1536px) {
           .stack48{
             max-width: 1536px;
           }
-          font-size: 13rem;
-          
+          font-size: 23rem;
         }
       }
     }
