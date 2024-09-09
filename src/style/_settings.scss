@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "GelionRegular";
-    src: url(../assets/font/Gelion-Regular.ttf);
+  font-family: "GelionRegular";
+  src: url(../assets/font/Gelion-Regular.ttf);
 }
 
 @font-face {
-    font-family: "GelionBold";
-    src: url(../assets/font/Gelion-Bold.ttf);
+  font-family: "GelionBold";
+  src: url(../assets/font/Gelion-Bold.ttf);
 }
 
 @mixin childCenter {
@@ -28,29 +28,29 @@
   }
 }
 
-$blue1 : rgb(60, 187, 178);
-$blue2 : rgb(122, 194, 183);
-$blue3 : rgb(65, 222, 155);
-$purple1 : rgb(47, 33, 86);
-$purple2 : rgb(97, 45, 143);
-$purple3 : rgb(115, 98, 168);
-$dark1 : rgb(50, 56, 78);
-$dark2 : rgb(20, 27, 53);
-$white1 : rgb(255, 254, 248);
-$white2 : rgb(250, 248, 243);
-$white3 : rgb(237,236,231);
-$black1 : black;
-$black2 : rgb(38, 38, 38);
-$font1 : GelionRegular, Roboto;
-$font2 : GelionBold, Roboto;
+$blue1: rgb(60, 187, 178);
+$blue2: rgb(122, 194, 183);
+$blue3: rgb(65, 222, 155);
+$purple1: rgb(47, 33, 86);
+$purple2: rgb(97, 45, 143);
+$purple3: rgb(115, 98, 168);
+$dark1: rgb(50, 56, 78);
+$dark2: rgb(20, 27, 53);
+$white1: rgb(255, 254, 248);
+$white2: rgb(250, 248, 243);
+$white3: rgb(237, 236, 231);
+$black1: black;
+$black2: rgb(38, 38, 38);
+$font1: GelionRegular, Roboto;
+$font2: GelionBold, Roboto;
 
 :root {
   font-family: $font1;
   line-height: 1.5;
   font-weight: 400;
-  
+
   color: $dark1;
-  background-color:$white2;
+  background-color: $white2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -69,17 +69,17 @@ button {
   background-color: #f9f9f9;
 }
 
-.nav-container{
+.nav-container {
   position: relative;
   text-align: right;
   color: $black2;
-  .nav-title{
+  .nav-title {
     position: absolute;
   }
-  .toggle{
+  .toggle {
     position: absolute;
   }
-  .nav-headling{
+  .nav-headling {
     padding-top: 10%;
     li {
       font-size: 3rem;
@@ -91,7 +91,7 @@ button {
   }
 }
 
-#nav-menu{
+#nav-menu {
   position: absolute;
   width: 101%;
   height: 65%;
@@ -100,10 +100,9 @@ button {
   left: -1%;
   transition: 0.5s ease-out;
   z-index: 4;
-}  
+}
 
-
-.stack48{
+.stack48 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -111,99 +110,90 @@ button {
   padding-right: 0.5em;
 }
 
-.header-container{
+.header-container {
   @include childCenter;
   flex-direction: column;
   font-family: $font2;
-  .logo{
-      height: 100%;
-      border: 0;
-      padding: 0;
+  .logo {
+    height: 100%;
+    border: 0;
+    padding: 0;
   }
-  .main-title{
+  .main-title {
     font-size: 4rem;
     letter-spacing: 20px;
     display: block;
     @media screen and (min-width: 475px) {
-      .stack48{
+      .stack48 {
         max-width: 475px;
       }
       font-size: 4rem;
-      
     }
     @media screen and (min-width: 544px) {
-      .stack48{
+      .stack48 {
         max-width: 544px;
       }
       font-size: 5rem;
-      
     }
     @media screen and (min-width: 640px) {
-      .stack48{
+      .stack48 {
         max-width: 640px;
       }
       font-size: 6rem;
-      
     }
     @media screen and (min-width: 686px) {
-      .stack48{
+      .stack48 {
         max-width: 686px;
       }
       font-size: 7rem;
-      
     }
     @media screen and (min-width: 768px) {
-      .stack48{
+      .stack48 {
         max-width: 768px;
       }
       font-size: 8rem;
-      
     }
     @media screen and (min-width: 826px) {
-      .stack48{
+      .stack48 {
         max-width: 826px;
       }
       font-size: 9rem;
-      
     }
     @media screen and (min-width: 1036px) {
-      .stack48{
+      .stack48 {
         max-width: 1036px;
       }
       font-size: 12rem;
-      
     }
     @media screen and (min-width: 1280px) {
-      .stack48{
-       max-width: 1280px; 
+      .stack48 {
+        max-width: 1280px;
       }
       font-size: 17.5rem;
-      
     }
     @media screen and (min-width: 1536px) {
-      .stack48{
-       max-width: 1536px; 
+      .stack48 {
+        max-width: 1536px;
       }
       font-size: 23rem;
-      
     }
   }
 }
 
-.head-up{
+.head-up {
   display: flex;
   flex-direction: column;
   text-align: right;
   margin-top: 60px;
 
-  .text{
+  .text {
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: right;
   }
-  
-  .text ::after{
+
+  .text ::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -211,18 +201,17 @@ button {
     right: 0;
     border-top: 1px solid $black1;
   }
-
 }
 
-.quote{
+.quote {
   margin-top: 2.5%;
   font-family: $font1;
   text-align: center;
   font-size: 2.5rem;
 }
 
-.business{
-  .business-title{
+.business {
+  .business-title {
     margin: 15%;
     font-size: 2rem;
     text-decoration: underline;
@@ -230,33 +219,33 @@ button {
   }
 }
 
-.business{
-  .cards{
-    img{
+.business {
+  .cards {
+    img {
       padding: 10%;
     }
   }
 }
 
-.Map{
+.Map {
   margin: 15% 0;
 }
 
-.TitleProject{
-  h2{
+.TitleProject {
+  h2 {
     text-align: left;
     font-family: $font2;
     font-size: 6rem;
     width: 25%;
     line-height: 80%;
     margin-bottom: 1%;
-    }
+  }
 }
 
-.projets-recents{
+.projets-recents {
   // overflow: hidden;
-  .cards{
-    img{
+  .cards {
+    img {
       border-radius: 2% 2% 2% 2% / 5% 5% 5% 5%;
       min-width: 200px;
       min-height: 200px;
@@ -266,59 +255,20 @@ button {
   }
 }
 
-// .cardscontainer{
-//   display: grid;
-//   grid-auto-rows: minmax(100px, auto);
-//   grid-template-columns: repeat(6, minmax(200px, 1fr));
-//   gap: 1em;
-//   grid-template-areas: 
-//   "a a a . . ."
-//   "a a a . . ."
-//   "a a a b b b"
-//   "c c c b b b"
-//   "c c c b b b"
-//   "c c c d d d"
-//   "e e e d d d"
-//   "e e e d d d"
-//   "e e e . . .";
-//   padding-left: 5%;
-// }
-
-// .dong-hanh{
-//   grid-area: a;
-// }
-
-// .folere{
-//   grid-area: b;
-// }
-
-// .numery{
-//   grid-area: c;
-// }
-
-// .vwd{
-//   grid-area: d;
-// }
-
-// .sakana{
-//   grid-area: e;
-// }
-
-.stories{
+.stories {
   margin-top: 30%;
-
 }
 
-.stories-container{
-  .stories-title{
+.stories-container {
+  .stories-title {
     text-align: left;
     font-size: 2.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
   }
-  
-  .stories-title ::after{
+
+  .stories-title ::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -326,7 +276,6 @@ button {
     left: 0;
     border-top: 1px solid $black1;
   }
-
 }
 
 a {
@@ -366,65 +315,60 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-footer{
+footer {
   padding: 10% 0;
 
-  .places{
+  .places {
     text-align-last: left;
   }
 
-  .contact{
+  .contact {
     display: flex;
     flex-direction: column;
-    align-items:end;
-    text-align:right;
+    align-items: end;
+    text-align: right;
   }
 
-  .ending{
+  .ending {
     padding-top: 25%;
     margin-bottom: -100%;
-    .ending-container{
+    .ending-container {
       top: 100%;
-      h2{
+      h2 {
         text-align: center;
         font-size: 6.9rem;
         @media screen and (min-width: 475px) {
-          .stack48{
+          .stack48 {
             max-width: 475px;
           }
           font-size: 6.9rem;
-          
         }
         @media screen and (min-width: 640px) {
-          .stack48{
+          .stack48 {
             max-width: 640px;
           }
           font-size: 9rem;
-          
         }
         @media screen and (min-width: 768px) {
-          .stack48{
+          .stack48 {
             max-width: 768px;
           }
           font-size: 12;
-          
         }
         @media screen and (min-width: 1024px) {
-          .stack48{
+          .stack48 {
             max-width: 1024px;
           }
           font-size: 14rem;
-          
         }
         @media screen and (min-width: 1280px) {
-          .stack48{
+          .stack48 {
             max-width: 1280px;
           }
           font-size: 19rem;
-          
         }
         @media screen and (min-width: 1536px) {
-          .stack48{
+          .stack48 {
             max-width: 1536px;
           }
           font-size: 23rem;
